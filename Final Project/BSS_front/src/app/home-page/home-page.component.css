@@ -1,0 +1,82 @@
+.main {
+  margin: 3%;
+  padding: 4%;
+  background-color: rgb(207, 212, 212);
+  opacity: 0.9;
+}
+
+.head {
+  background-color: rgba(210, 232, 153, 0.717);
+  padding: 1%;
+  text-align: center;
+}
+
+.content {
+  background-color: gainsboro;
+  padding: 1%;
+  margin-top: 20px;
+  border: 2px black solid;
+}
+
+.contentRight {
+  margin-left: 40%;
+}
+
+.contentLeft {
+  margin-right: 40%;
+}
+
+.bot {
+  margin-top: 100px;
+}
+
+.icons {
+  margin-right: 20px;
+  width: 30px;
+}
+
+.floatRight {
+  float: right;
+}
+
+.botButtons {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.botButtons:hover {
+  color: rgb(0, 13, 255);
+}
+
+.img {
+  height: 170px;
+  border: 4px gray solid;
+  border-radius: 20px;
+}
+
+#img1 {
+  position: absolute;
+  top: 440px;
+  right: 25%;
+}
+#img2 {
+  position: absolute;
+  top: 640px;
+  left: 23%;
+}
+#img3 {
+  position: absolute;
+  top: 855px;
+  right: 27%;
+}
+#img4 {
+  position: absolute;
+  top: 1090px;
+  left: 12%;
+  height: 230px;
+}
+#img5 {
+  position: absolute;
+  top: 1390px;
+  right: 27%;
+}

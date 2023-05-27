@@ -1,0 +1,44 @@
+<div class="about">
+
+  <h1>ABOUT US</h1>
+
+  <h2>Description of the restaurant "BSS's Restaurant" in Almaty:</h2>
+
+  <p>
+    Welcome to BSS's Restaurant, the perfect place for any occasion -
+    whether it's a romantic date, a business meeting, a family dinner,
+    or a celebration with friends. Our restaurant offers a cozy and
+    welcoming atmosphere, where you can enjoy quiet evenings with loved
+    ones or lively gatherings with a large group.
+    <br>
+    <br>
+    We have two halls to accommodate our guests -
+    a large hall that seats up to 100 people and a
+    smaller hall that seats up to 30 people. Our staff greets you
+    with a warm smile and sincere hospitality, reflecting
+    the best of Eastern hospitality.
+    <br>
+    <br>
+    At BSS's Restaurant, we take pride in our menu that caters
+    to every taste. We offer a variety of traditional Oriental
+    dishes, classic European cuisine, and Japanese seafood specialties.
+    Our chefs use special recipes to create delicious and flavorful dishes,
+    always prepared with passion and care.
+    <br>
+    <br>
+    But BSS's Restaurant is more than just a place to eat. We offer good prices,
+    excellent service, and a warm and inviting atmosphere that will make you
+    feel right at home. Come join us today and experience the best of Almaty's
+    dining scene at BSS's Restaurant!
+  </p>
+
+  <h2>OUR TEAM:</h2>
+  <div *ngFor="let worker of team">
+    <div>
+      <h3>{{ worker.role }}:</h3>
+      <p>{{ worker.name }} </p>
+
+    </div>
+
+  </div>
+</div>

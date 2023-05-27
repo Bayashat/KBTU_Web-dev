@@ -1,0 +1,16 @@
+<div class="myAcc">
+  <div>
+    <p>{{ currentAcc.name }} {{ currentAcc.surname }}</p>
+    <img class="img" width="200px" src="https://images.thestar.com/v4Tv38GX7LexiPD9Gb1YqrvT-F8=/1280x1024/smart/filters:cb(1569954484038)/https://www.thestar.com/content/dam/thestar/entertainment/television/analysis/2019/01/25/is-this-the-breakout-year-for-asian-men-in-leading-roles/simu_liu.jpg">
+  </div>
+  <div class="userDesc">
+    <p>Age: {{ currentAcc.age }} </p>
+    <p>Info: {{ currentAcc.addInfo }} </p>
+    <p>Story:</p>
+    <ul class="orderStory" *ngFor="let order of currentAcc.orderStory">
+      <li>
+        {{ order }}
+      </li>
+    </ul>
+  </div>
+</div>
