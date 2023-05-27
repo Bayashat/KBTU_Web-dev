@@ -1,0 +1,38 @@
+<h1>Welcome to Angular {{title}}</h1>
+
+
+<h3>{{ numbers }}</h3>
+
+<ul>
+  <li *ngFor="let number of numbers">
+    {{ number }}
+  </li>
+</ul>
+
+
+<h2 *ngIf="isOK">{{ message }}</h2>
+<button (click)="btnClick()">Click this button</button>
+
+<ul>
+  <li *ngFor="let student of students; let i = index;">
+    {{i+1}}) {{ student.id }} - {{ student.name }} - {{ student.gpa }}
+  </li>
+</ul>
+
+<fieldset>
+  <label>Your task: </label>
+  <input type="text" [(ngModel)]="inputData">
+  <button (click)="addItem()">Add item</button>
+</fieldset>
+<ul>
+  <li *ngFor="let item of items; let i = index;">
+    <p>
+      {{ i+1 }}) - {{ item }}
+      <button (click)="deleteItem(i)">x</button>
+    </p>
+
+  </li>
+</ul>
+
+
+<router-outlet></router-outlet>
