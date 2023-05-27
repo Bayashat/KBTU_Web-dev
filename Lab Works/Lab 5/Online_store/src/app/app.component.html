@@ -1,0 +1,13 @@
+<app-top-bar></app-top-bar>
+
+<!-- Categories bar -->
+<button class="navig" (click)="categorySelect(1)">Laptops</button>
+<button class="navig" (click)="categorySelect(2)">Phones</button>
+<button class="navig" (click)="categorySelect(3)">Cameras</button>
+<button class="navig" (click)="categorySelect(4)">PCs</button>
+
+<!-- Child components: product-list and product-item -->
+<div class="container">
+  <!-- use [] send the data to child component -->
+  <app-product-list [category]="category"></app-product-list>  
+</div>

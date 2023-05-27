@@ -1,0 +1,9 @@
+
+<div *ngFor="let product of category; let i = index" class="items">
+	<!-- send the product items to product-item component -->
+	<app-product-item 
+		[product]="product"  
+		(remove)="onListRemove($event)">  <!-- get the remove data from child comp -->
+	</app-product-item>
+
+</div>

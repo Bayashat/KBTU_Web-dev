@@ -1,0 +1,29 @@
+<h3>
+    <a [title]="product.name + ' details'" [href]="product.url" target="_blank">
+        <span>{{ product.name }}</span>
+    </a>
+        <button class="remove_btn btn btn-danger" (click)="removeProduct()">  <!-- remove function -->
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+        <div>
+            <img src="{{ product.image }}" alt="">
+        </div>
+</h3>
+
+<p class="rating">Rating: {{ product.rating }}</p>
+
+<p class="price">Цена: {{ product.price | number:'.2' }} Тг</p>
+
+<p *ngIf="product.description">{{ product.description }}</p>
+
+<button type="button" (click)="share_wtsp(product.url)">
+    Share to WhatsApp
+</button>
+
+<button type="button" (click)="share_telegram(product.url)" class="btn_telegram">
+    Share to Telegram
+</button>
+
+<button class="like btn btn-success" (click)="liked()">
+    <span class="glyphicon glyphicon-thumbs-up img_like" aria-hidden="true"></span> <span class="cnt">{{ cnt }}</span>
+</button>
